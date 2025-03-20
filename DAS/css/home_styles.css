@@ -1,0 +1,359 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #1a1a1a; */
+    background-image: url('/resources/home/bg.jpg'); /* 替换为背景图像路径 */
+    background-size: cover; /* 使背景图像覆盖整个页面 */
+    /* background-position:top ; /* 背景图像顶头显示 */
+    background-position: 0 -200px; /* 水平方向偏移 0，垂直方向偏移 200px */
+    background-repeat:repeat-y; /* 如何重复背景图像 */
+    color: #fff; /* 默认文本颜色为白色 */
+    line-height: 1.5;
+    overflow-x: hidden; /* 禁用横向滚动条 */
+}
+
+
+/* --------------------------------- 页面 1 --------------------------------- */
+.gradiant-title-reverse{
+    line-height: 1.2;
+    background-size: cover;
+    text-align: center;
+    font-size: 80px; /* 大标题的字体大小 */
+    background: linear-gradient(to left, #e5ff60,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+
+}
+.text-p1{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.hero {
+    padding-top: 100px;
+    text-align: center; /* 仍然保持中心对齐 */
+    position: relative;
+    height: 500px; /* 高度占据视窗的55% */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    display: flex; /* 使用 flexbox */
+    align-items: center; /* 垂直居中内容 */
+    justify-content: center; /* 水平居中内容 */
+    overflow-x: hidden; /* 禁用横向滚动条 */
+}
+
+.hero-image {
+    width: 95%; /* 宽度占页面的95% */
+    height: 100%; 
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直中心 */
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 将图像中心对准页面中心 */
+    object-fit: cover; /* 保持宽高比，填充整个区域 */
+    border-radius: 20px; /* 圆角矩形 */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%; /* 宽度100% */
+    min-height: 100%; /* 确保图片至少占满容器 */
+    position: relative; /* 设置相对定位 */
+    top: 0%; /* 向上移动以显示上部 */
+    left: 50%;
+    transform: translate(-50%,-8%); /* 水平居中 */
+}
+.hero-content {
+    position: relative; /* 设为相对定位 */
+    z-index: 10; /* 确保文本在最上层 */
+    text-align: center; /* 文本居中 */
+    padding: 20px; /* 添加内边距 */
+}
+
+
+
+/* --------------------------------- 页面 2 -------------------------------- */
+
+.text-p2{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold ;
+}
+
+.container-p2 {
+    width: 92%;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.393),white,#ffffff41);  */
+    text-align: center;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
+    margin-top: 100px;
+}
+
+.button-container-p2 {
+    margin: 20px;
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中对齐（可选） */
+}
+
+.transparent-btn-p2 {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.transparent-btn-p2:hover,
+.transparent-btn:focus {
+    border: #d8ff18;
+    background-color:#d8ff18; /* 按钮的活跃状态颜色 */
+    color: #000000; /* 按钮的活跃状态文字颜色 */
+}
+
+.transparent-btn-p2.active {
+    border: #d8ff18;
+    background-color:#d8ff18; /* 按钮的活跃状态颜色 */
+    color: #000000; /* 按钮的活跃状态文字颜色 */
+}
+
+
+.arrow {
+    width: 30px; /* 根据需要调整箭头的大小 */
+    height: 30px; /* 根据需要调整箭头的大小 */
+    margin: 0px 30px; /* 调整箭头与按钮之间的间距 */
+}
+
+.text-p2 {
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    margin-top: -20px;
+}
+
+.Get3DMapper{
+    transform: scale(0.8);
+    margin: 0px 0;
+}
+
+.item-list-p2 {
+    display: flex; /* 让列表横向排列 */
+    justify-content: center; /* 居中排列 */
+    padding: 0;
+    list-style-type: none; /* 去掉默认的列表样式 */
+    margin: 0px 0px;
+}
+
+.item-list-p2 li {
+    font-size: 24px;
+    color: #A6A6A6;
+    display: flex;
+    align-items: center;
+    margin: 0 40px; /* 调整间距 */
+}
+
+.item-list-p2 li::before {
+    content: '';
+    background: url('/resources/home/1.svg') no-repeat center; /* 替换为第一个SVG路径 */
+    background-size: contain;; /* 图标大小 */
+    width: 32px;
+    height: 32px;
+    margin-right: 5px; /* 调整图标与文本之间的距离 */
+}
+
+.item-list-p2 li:nth-child(2)::before {
+    background: url('/resources/home/2.svg') no-repeat center; /* 替换为第二个SVG路径 */
+}
+
+.item-list-p2 li:nth-child(3)::before {
+    background: url('/resources/home/3.svg') no-repeat center; /* 替换为第三个SVG路径 */
+}
+
+
+.video-container-p2 {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+video {
+    width: 65%;
+    border-radius: 20px;
+    border: 20px solid #000; /* 黑色实心边框 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* 黑色阴影 */
+}
+
+
+/* --------------------------------- 页面 3 -------------------------------- */
+.gradient-title-p3 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to left, #d8ff18 40%,#e5ff60,white 50%,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 220px;
+    margin-bottom: 40px;
+}
+/* 四宫格展示 */
+.grid-container-p3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列 */
+    grid-template-rows: repeat(2, 1fr); /* 两行 */
+    column-gap: 150px; /* 网格间距 */
+    row-gap:55px;
+    width: 80%; /* 容器宽度 */
+    height: 750px;
+    margin: 0 auto; /* 居中 */
+
+}
+
+.grid-item-p3 {
+    /* background-color: #222; /* 背景颜色 */
+    color: white; /* 字体颜色 */
+    border-radius: 10px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-between; /* 水平分配空间 */
+    margin-left: 100px;
+}
+
+.container-p3{
+    margin-top: 15px;/* 灰色框距离顶部15px 和标题文字对齐 */
+    /* background-color: rgba(62, 62, 62, 0.461); */
+    width: 150px;
+    height:150px;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平分配空间 */
+    border-radius: 10px;
+}
+.model-image {
+    width:100%; /* 图片宽度 */
+    height: auto; /* 自适应高度 */
+    border-radius: 10px; /* 圆角 */
+    /* margin-left: 10%;  */
+}
+
+.text-content {
+    margin-left: 10px; /* 图片与文本的间距 */
+    width: 75%;
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 纵向排列 */
+    align-items: flex-start; /* 左对齐 */
+}
+
+.model-info-title {
+    line-height: 1;
+    font-weight: normal;
+    font-size: 36px; /* 设置标题的字体大小 */
+    margin: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.model-info-text{
+    margin: 5px;
+    font-size: 24px;
+}
+
+/* --------------------------------- 页面 4 -------------------------------- */
+.gradient-title-p4 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to right, #d8ff18 40%,#e5ff60,white 50%,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top:70px;
+    margin-bottom: 50px;
+}
+
+.main-container-p4 {
+    position: relative; /* 使伪元素定位相对于此容器 */
+    padding: 0 0 0px 0px;
+    border-radius: 10px;
+    width: 92%; /* 设置宽度为 92% */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+.box-container-p4 {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 子元素均匀分布 */
+    margin-top: 20px; /* 顶部间距 */
+    
+}
+
+.box-p4 img {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 自适应高度 */
+    border-radius: 10px;
+}
+.box-p4 {
+    display: flex; /* 启用 Flexbox */
+    flex-direction: column; /* 垂直方向布局 */
+    justify-content: space-between; /* 子元素之间的间隔 */
+    width: 30%; /* 子容器宽度 */
+    padding: 10px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    min-height: 300px; /* 设置最小高度以确保一致性 */
+    transition: transform 0.3s ease;
+}
+
+.box-p4:hover  {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+/* --------------------------------- 页面 5 -------------------------------- */
+.gradiant-title-reverse-p5{
+    line-height: 1;
+    background-size: cover;
+    text-align: center;
+    font-size: 60px; /* 大标题的字体大小 */
+    background: linear-gradient(to left, #d8ff18,#e5ff60,white,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+}
+
+.content-p5 {
+    width:60%;
+    position: relative; /* 设为相对定位 */
+    z-index: 10; /* 确保文本在最上层 */
+    text-align: center; /* 文本居中 */
+    padding: 20px; /* 添加内边距 */
+    margin: 0 auto; /* 居中对齐 */
+    margin-top: 180px;
+}
+
+.action-button-p5 {
+    padding: 20px 100px; /* 内边距 */
+    font-size: 36px; /* 字体大小 */
+    cursor: pointer;
+    border-radius: 60px; /* 圆角 */
+    background-color: #d8ff18; /* 按钮背景颜色 */
+    color: rgb(0, 0, 0); /* 字体颜色 */
+    font-weight: bold; /* 加粗 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s; /* 渐变效果 */
+}
+
+.action-button-p5:hover {
+    border: 1px solid #ffffff; /* 添加边框颜色 */
+    background-color: rgb(148, 148, 148); /* 悬停时的背景色 */
+}
+
+.text-p5{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+/* --------------------------------- 页  脚 -------------------------------- */
+

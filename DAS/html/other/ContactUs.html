@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/navbar_footer.css">
+    <link rel="stylesheet" href="/css/contact_us.css">
+</head>
+<body>
+     <!-- 顶部导航栏 -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="/resources/logos/GET3Dgreen.png" alt="Get3D Logo" class="logo-image" />
+        </div>
+        <!-- 6个栏目 -->
+        <ul class="nav-menu">
+            <!-- Product -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">Products</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-category">Software</div>
+                            <div class="underline"></div> <!-- 添加横线 -->
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Get3D Mapper</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">Get3D Viewer</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Get3D ModelFun</a></div>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="dropdown-category">Hardware</div>
+                            <div class="underline"></div> <!-- 添加横线 -->
+                            <div class="dropdown-item"><a href="/products/get3d-farmLite/">Get3D Farm Lite</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-eyeCamera/">Get3D 5-Eye Camera</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            
+
+            <!-- Cases -->
+            <li><a href="#">Cases</a></li>
+
+            <!-- Support -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">Support</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Downloads</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">Tutorial</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Vedio</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- About us -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">About Us</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Contact us</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">News</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Become a Dealer</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- Cloud -->
+            <li><a href="#">Cloud</a></li>
+        </ul>
+        
+        <div class="auth-buttons">
+            <button class="auth-button">Log In</button>
+            <button class="auth-button">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- 主体 -->
+    <div class="container">
+        <div class="contact-card">
+            <h1>We'd love to hear from you</h1>
+            <p>Send us a message and we'll respond as soon as possible</p>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="full-name"><span class="star">*</span> Full Name</label>
+                    <input type="text" id="full-name" placeholder="Your name" required>
+                    <div class="error-message" id="full-name-error">Please enter your full name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email"><span class="star">*</span> Email</label>
+                    <input type="email" id="email" placeholder="Your work email" required>
+                    <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="company"><span class="star">*</span> Company</label>
+                    <input type="text" id="company" placeholder="Your company name" required>
+                    <div class="error-message" id="company-error">Please enter your company name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="topic"><span class="star">*</span> Topic</label>
+                    <div class="custom-select" id="topic-select">
+                        <div class="selected-option" id="selected-topic">Choose topic of message</div>
+                        <ul class="options" id="topic-options">
+                            <li data-value="inquiry">Problem feedback</li>
+                            <li data-value="support">Improvement suggestions</li>
+                            <li data-value="feedback">Business Cooperation</li>
+                            <li data-value="other">Other</li>
+                        </ul>
+                        <img src="/resources/contact_us/arrow.svg" alt="Arrow" class="arrow-icon">
+                    </div>
+                    <!-- 错误信息显示处 -->
+                    <div class="error-message" id="topic-error">Please select a topic.</div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="message"><span class="star">*</span> Message</label>
+                    <textarea id="message" placeholder="What are your needs? Include as much info as possible." rows="4" maxlength="500" required></textarea>
+                    <!-- 错误信息显示处 -->
+                    <div class="error-message" id="message-error">Please enter your message.</div>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 页脚  -->
+    <footer class="footer">
+  
+        <div class="footer-bottom">
+            <span>©2025 Get3D.ai All rights reserved.</span>
+            <div class="footer-links">
+                <a href="/terms/">Terms of Service</a>
+                <a href="/privacy/">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
+ <!-- javaScript -->
+ <script src="/js/contact_us/submit.js"></script>
+ <script src="/js/contact_us/TopicOptions.js"></script>

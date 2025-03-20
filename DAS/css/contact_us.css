@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff; /* 背景颜色 */
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* 中心对齐 */
+    align-items: center; /* 垂直居中 */
+    min-height: calc(100vh - 130px); /* 调整为导航栏和页脚之间的高度 */
+    padding: 20px; /* 内边距 */
+}
+
+.contact-card {
+    background-color: white; /* 卡片背景颜色 */
+    padding: 40px; /* 内部填充 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    width: 100%; /* 宽度 */
+    max-width: 800px; /* 最大宽度 */
+}
+
+h1 {
+    margin-bottom: 20px; /* 标题下方间距 */
+    font-size: 24px; /* 标题字体大小 */
+    text-align: center; /* 标题居中 */
+}
+
+p {
+    margin-bottom: 20px; /* 段落下方间距 */
+    text-align: center; /* 段落居中 */
+    color: #666; /* 文字颜色 */
+}
+
+.topic{
+    margin-bottom: 20px; /* 段落下方间距 */
+    text-align: center; /* 段落居中 */
+    color: #666; /* 文字颜色 */
+}
+
+.form-group {
+    margin-bottom: 15px; /* 表单组下方间距 */
+}
+
+label {
+    display: block; /* 标签块级显示 */
+    margin-bottom: 5px; /* 标签下方间距 */
+}
+
+.star {
+    color: red;
+    font-size: 1.2rem;
+}
+
+input, select, textarea {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px; /* 内部填充 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+}
+
+textarea {
+    height: 120px;
+    resize: vertical; /* 允许调整高度 */
+    max-height: 300px; /* 设置最大高度 */
+    min-height: 100px;
+    font-family:  Arial;
+}
+
+
+.custom-select {
+    position: relative; /* 设置为相对定位 */
+    width: 100%; /* 与输入框宽度一致 */
+}
+
+.selected-option {
+    padding: 5px; /* 内部填充 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停状态 */
+    color: rgb(110, 110, 110); /* placeholder 样式 */
+}
+
+.options {
+    display: none; /* 默认隐藏选项 */
+    position: absolute; /* 绝对定位 */
+    width: 100%; /* 与自定义选择框宽度一致 */
+    background-color: white; /* 背景颜色 */
+    border:2px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    max-height: 200px; /* 最大高度 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    z-index: 1000; /* 确保在最上层 */
+}
+
+.options li {
+    padding: 10px; /* 内部填充 */
+    cursor: pointer; /* 鼠标悬停状态 */
+}
+
+.options li:hover {
+    background-color: #f0f4ff; /* 悬停时背景颜色 */
+}
+
+.arrow-icon {
+    position: absolute; /* 绝对定位 */
+    right: 20px; /* 距离右侧 */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%) scale(2); /* 垂直居中 */
+    width: 10px;
+}
+
+/* 提交按钮 */
+.submit-button {
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    padding: 10px; /* 内部填充 */
+    border: none; /* 去掉边框 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停状态 */
+    width: 100px; /* 按钮宽度 */
+    font-size: 16px; /* 字体大小 */
+    margin: 0 auto; /* 水平居中 */
+    display: block; /* 作为块级元素居中 */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* 悬停时颜色 */
+}
+
+/* 错误提示样式 */
+.error-message {
+    display: none; /* 默认隐藏 */
+    color: #ff0000; /* 红色文字 */
+    font-size: 0.9rem; /* 小字体 */
+
+}

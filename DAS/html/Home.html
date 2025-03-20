@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home_styles.css">
+    <link rel="stylesheet" href="/css/navbar_footer.css">
+</head>
+<body>
+     <!-- 顶部导航栏 -->
+     <nav class="navbar">
+        <div class="logo">
+            <img src="/resources/logos/GET3Dgreen.png" alt="Get3D Logo" class="logo-image" />
+        </div>
+        <!-- 6个栏目 -->
+        <ul class="nav-menu">
+            <!-- Product -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">Products</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-category">Software</div>
+                            <div class="underline"></div> <!-- 添加横线 -->
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Get3D Mapper</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">Get3D Viewer</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Get3D ModelFun</a></div>
+                        </div>
+                        <div class="dropdown-column">
+                            <div class="dropdown-category">Hardware</div>
+                            <div class="underline"></div> <!-- 添加横线 -->
+                            <div class="dropdown-item"><a href="/products/get3d-farmLite/">Get3D Farm Lite</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-eyeCamera/">Get3D 5-Eye Camera</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            
+
+            <!-- Cases -->
+            <li><a href="#">Cases</a></li>
+
+            <!-- Support -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">Support</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Downloads</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">Tutorial</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Vedio</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- About us -->
+            <li class="dropdown">
+                <button class="dropdown-toggle">About Us</button>
+                <ul class="dropdown-menu">
+                    <div class="dropdown-columns">
+                        <div class="dropdown-column">
+                            <div class="dropdown-item"><a href="/products/get3d-mapper/">Contact us</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-viewer/">News</a></div>
+                            <div class="dropdown-item"><a href="/products/get3d-modelfun/">Become a Dealer</a></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+
+            <!-- Cloud -->
+            <li><a href="#">Cloud</a></li>
+        </ul>
+        
+        <div class="auth-buttons">
+            <button class="auth-button">Log In</button>
+            <button class="auth-button">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- 页面 1 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="gradiant-title-reverse">
+                End-to-End <br>3D Modeling Solution:<br>
+                From lmages to<br> High-Precision Models
+            </h1>
+            <h1 class="text-p1">Seamlessly capture, refine, and visualize 3D models with our powerful suite of tools.</h1>
+        </div>
+    </header>
+
+    <!-- 页面 2 -->
+    <!-- 步骤卡片 -->
+    <div class="container-p2">
+        <!-- 视频 -->
+        <div class="video-container-p2">
+            <video muted loop autoplay>
+                <source src="/resources/home/step1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="button-container-p2">
+            <button class="transparent-btn-p2" data-target="modeling">Tool 1: Modeling</button>
+            <img src="/resources/home/arrow.svg" alt="Arrow" class="arrow"> <!-- 第一个箭头 -->
+            <button class="transparent-btn-p2" data-target="editing">Tool 2: Editing</button>
+            <img src="/resources/home/arrow.svg" alt="Arrow" class="arrow"> <!-- 第二个箭头 -->
+            <button class="transparent-btn-p2" data-target="viewing">Tool 3: Viewing</button>
+        </div>
+
+        <img src="/resources/home/Get3DMapper.svg" class="Get3DMapper"> 
+        <p class="text-p2">Transform images and point clouds into accurate 3D models.</p>
+<!--         
+        <ul class="item-list-p2">
+            <li>Large-Scale 3D Reconstruction capability</li>
+            <li>High-Speed Processing Intensity</li>
+            <li>Superior output quality visualization</li>
+        </ul> -->
+
+    </div>
+    
+    
+    <!-- 页面 3 -->
+    <h1 class="gradient-title-p3">Why Choose us</h1>
+    <!-- 四宫格 -->
+    <div class="grid-container-p3">
+        <div class="grid-item-p3">
+            <div class="container-p3">
+                <img src="/resources/home/p3-1.svg" alt="Model 1" class="model-image" />
+            </div>
+            <div class="text-content">
+                <h2 class="model-info-title">Better Looking,<br>Better Performing</h2>
+                <p class="model-info-text">
+                    A refined 3D model isn' t just visually<br>
+                    appealing - it' s more accurate,<br>
+                    readable, and usable. Sharp details and<br>
+                    smooth surfaces enhance clarity,<br>
+                    interaction, and real-world application.<br>
+                    In 3D modeling, beauty drives usability.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item-p3">
+            <div class="container-p3">
+                <img src="/resources/home/p3-2.svg" alt="Model 1" class="model-image" />
+            </div>
+            <div class="text-content">
+                <h2 class="model-info-title">1+1+1>3</h2>
+                <p class="model-info-text">
+                    Modeling, refining, and viewing<br>
+                    are deeply integrated, eliminating<br>
+                    compatibility issues and manual<br>
+                    fixes. A faster,
+                    smoother, and more<br> precise 3D
+                    modeling experience.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item-p3">
+            <div class="container-p3">
+                <img src="/resources/home/p3-3.svg" alt="Model 1" class="model-image" />
+            </div>
+            <div class="text-content">
+                <h2 class="model-info-title">All-in-One Workflow</h2>
+                <p class="model-info-text">
+                    No more switching between
+                    tools.<br> Everything you need in one
+                    solution.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item-p3">
+            <div class="container-p3">
+                <img src="/resources/home/p3-4.svg" alt="Model 1" class="model-image" />
+            </div>
+            <div class="text-content">
+                <h2 class="model-info-title">High Precision &<br> Scalability</h2>
+                <p class="model-info-text">
+                    Generate accurate, scalable 3D<br>
+                    models for any industry.
+                </p>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面 4 -->
+    <h1 class="gradient-title-p4"> Industries</h1>
+   
+    <section class="main-container-p4">
+        <div class="box-container-p4">
+            <div class="box-p4">
+                <img src="/resources/home/temp1.jpg" alt="Watermark Protection" />
+             </div>
+    
+            <div class="box-p4">
+                <img src="/resources/home/temp2.jpg" alt="Model Cropping" />
+            </div>
+    
+            <div class="box-p4">
+                <img src="/resources/home/temp3.jpg" alt="Format & Coordinate System Conversion" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 页面 5 -->
+    <div class="content-p5">
+        <h1 class="gradiant-title-reverse-p5">
+            See the Difference.<br>
+            Try it Now!
+        </h1>
+        <h3 class="text-p5">
+            Experience the power of seamless 3D modeling with our all-in-one solution. Create,
+            refine, and visualize stunning models effortlessly. Start your trial today and see how
+            better models make better results!
+        </h3>
+        <a href="try-now-link" class="action-button-p5">Try Now</a>
+    </div>
+
+
+    <!-- 页脚  -->
+    <footer class="footer">
+        <div class="logo-section">
+            <a href="/">
+                <img src="/resources/logos/GET3Dwhite.png" alt="Logo" class="footer-logo" />
+            </a>
+        </div>
+        <div class="footer-container">
+            <!-- 4列内容 -->
+            <div class="links-section">
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/cases/">Use Cases</a></li>
+                        <li><a href="/dealer/">Become a Dealer</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="/html/products/gm.html">Get3D Mapper</a></li>
+                        <li><a href="https://cloud.get3d.ai" target="_blank">Get3D Cloud</a></li><!-- target="_blank"即加载到新标签页面 -->
+                        <li><a href="/products/get3d-viewer/">Get3D Viewer</a></li>
+                        <li><a href="/products/get3d-reaction/">Get3D Reaction</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@Get3D_Official" target="_blank">Videos</a></li>
+                        <li><a href="https://docs.get3d.ai" target="_blank">Documents</a></li>
+                        <li><a href="/downloads/">Downloads</a></li>
+                        <li><a href="/news/">News</a></li>
+                    </ul>
+                </div>
+                <!-- 4个小图标 -->
+                <div class="social-section">
+                    <a href="https://www.instagram.com/get3d_official/" target="_blank" class="social-icon">
+                        <img src="/resources/icons/instagram.png" class="end-icon-image" alt="image" />
+                    </a>
+                    <a href="https://twitter.com/Get3D_Official" target="_blank" class="social-icon">
+                        <img src="/resources/icons/x.png" class="end-icon-image" alt="image" />
+                    </a>
+                    <a href="https://www.youtube.com/@Get3D_Official" target="_blank" class="social-icon">
+                        <img src="/resources/icons/Youtube.png" class="end-icon-image" alt="image" />
+                    </a>
+                    <div class="phone-icon">
+                        <div class="social-icon">
+                            <img src="/resources/icons/phone.png" class="end-icon-image"  alt="image" />
+                        </div>
+                        <div class="tooltip">
+                            <img src="/resources/icons/Youtube.png" class="end-icon-image"  alt="image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>©2025 Get3D.ai All rights reserved.</span>
+            <div class="footer-links">
+                <a href="/terms/">Terms of Service</a>
+                <a href="/privacy/">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.transparent-btn-p2');
+        
+        // 内容数据
+        const contentData = {
+            modeling: {
+                description: "Transform images and point clouds into accurate 3D models.",
+                items: [
+                    "Large-Scale 3D Reconstruction capability",
+                    "High-Speed Processing Intensity",
+                    "Superior output quality visualization"
+                ],
+                videoSrc: "/resources/home/step1.mp4"
+            },
+            editing: {
+                description: "Clean, refine, and enhance your 3D models effortlessly with intuitive editing tools.",
+                items: [
+                    "Enhanced visuals & Realism",
+                    "Broad Application Scenarios",
+                    "Thorough Functionality"
+                ],
+                videoSrc: "/resources/home/step2.mp4"
+            },
+            viewing: {
+                description: "View, share, and analyze 3D models anywhere, anytime with our lightweight viewer.",
+                items: [
+                    "Effortless 3D Model Viewing",
+                    "Quality Inspection, Presentation, and Reporting",
+                    "Comprehensive Output and Data Utilization"
+                ],
+                videoSrc: "/resources/home/step3.mp4"
+            }
+        };
+
+        // 设置初始内容
+        function updateContent(target) {
+            const content = contentData[target];
+            const descriptionElement = document.querySelector('.text-p2');
+            const itemListElement = document.querySelector('.item-list-p2');
+            const videoElement = document.querySelector('.video-container-p2 video');
+
+            // 更新描述
+            descriptionElement.innerHTML = content.description;
+            
+            // 更新条目列表
+            itemListElement.innerHTML = ''; // 清空现有列表
+            content.items.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                itemListElement.appendChild(li);
+            });
+
+            // 更新视频源
+            videoElement.src = content.videoSrc;
+            videoElement.load(); // 重新加载视频
+        }
+
+        // 为按钮添加点击事件
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const target = button.getAttribute('data-target');
+
+                // 清除所有按钮的活跃状态
+                buttons.forEach(btn => btn.classList.remove('active'));
+                
+                // 为当前按钮添加活跃状态
+                button.classList.add('active');
+
+                // 更新内容
+                updateContent(target);
+            });
+        });
+
+        // 初始化时设置第一个按钮的内容
+        updateContent('modeling');
+        // 同时将第一个按钮设置为活跃状态
+        buttons[0].classList.add('active');
+    });
+</script>
+

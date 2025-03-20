@@ -1,0 +1,267 @@
+/* 顶部导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* 在导航栏中均匀分布元素 */
+    align-items: center; /* 垂直居中元素 */
+    padding: 5px 40px;
+    background-color: #000;
+    position: sticky; /* 当滚动时，导航栏保持在顶部 */
+    top: 0;
+    z-index: 1000; /* 确保导航栏在其他元素之上 */
+}
+
+.nav-menu {
+    font-size: 24px;
+    display: flex;
+    gap: 5%; /* 各个按钮之间的间隔 */
+    justify-content: center; /* 居中菜单项 */
+    flex-grow: 1; /* 使菜单占据剩余空间 */
+    margin: 0;
+}
+
+.navbar .logo {
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.logo-image {
+
+    transform: scale(1.5);
+    height:60px; /* 设置Logo图片的高度 */
+    width: auto; /* 宽度自适应 */
+}
+
+.navbar .nav-menu li {
+    position: relative; /* 为下拉菜单设置相对定位 */
+}
+
+.navbar .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar .nav-menu li a:hover {
+    color: #d8ff18; /* 悬停时链接颜色 */
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative; /* 使下拉菜单在相对位置下呈现 */
+}
+
+.dropdown-toggle {
+    padding-bottom: 0px;
+    background: none; /* 按钮背景无 */
+    border: none; /* 去掉边框 */
+    color: #fff; /* 文字颜色 */
+    font-size: 24px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针样式 */
+}
+
+.dropdown-toggle:hover {
+    color: #d8ff18; /* 悬停时链接颜色 */
+}
+
+.dropdown-menu {
+    display: none;   /*默认隐藏下拉菜单 */
+    position: absolute; /* 绝对定位 */
+    top: 100%; /* 在按钮下方多远显示 */
+    left: 0; /* 左对齐 */
+    width: 250px; /* 下拉菜单宽度 */
+    background-color: rgba(37, 37, 37, 0.868); /* 半透明灰色 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* 阴影效果 */
+    z-index: 1001; /* 确保下拉菜单在其他元素之上 */
+    padding-left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* 悬停时显示下拉菜单 */
+}
+
+.dropdown-columns {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 列竖排 */
+    padding: 15px; /* 添加内边距 */
+}
+
+.dropdown-column {
+    margin-bottom: 0px; /* 列之间的间隔 */
+}
+
+.dropdown-category {
+    font-weight: bold; /* 加粗字体 */
+    padding: 15px 5px 0 0; /* 内边距 */
+}
+
+.underline {
+    height: 1px; /* 横线高度 */
+    background-color: rgba(255, 255, 255, 0.5); /* 横线颜色 */
+    margin: 2px 0; /* 横线上下边距 */
+}
+
+.dropdown-item {
+    padding: 5px 0; /* 内边距 */
+}
+
+.dropdown-item a {
+    color: #000; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.dropdown-item a:hover {
+    color: #d8ff18; /* 悬停时链接颜色 */
+}
+
+/* 去掉导航栏其他链接前的圆点 */
+.nav-menu li {
+    list-style: none; /* 去掉列表样式 */
+}
+
+
+/* 登录/注册按钮样式 */
+.auth-buttons { 
+    display: flex;
+    gap: 10px; /* 按钮之间的间距 */
+}
+
+.auth-button {
+    width: 150px;
+    background-color: #d8ff18; /* 按钮绿色 */
+    border: 1px solid #d8ff18; /* 添加边框颜色 */
+    color: #000;
+    padding: 5px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 30px; /* 圆角效果 */
+    cursor: pointer;
+    margin: 10px ;
+}
+
+/* 登录按钮 */
+.auth-button:hover {
+    border: 1px solid #ffffff; /* 添加边框颜色 */
+    background-color: rgb(148, 148, 148); /* 悬停时的背景色 */
+}
+
+/* --------------------------------- 页  脚 -------------------------------- */
+
+.footer {
+    font-size: 24px;
+    margin-top: 5%;
+    background-color: #000;  /*背景颜色*/
+    color: #fff; /* 字体颜色 */
+    padding: 0px 50px; /* 内边距 */
+}
+
+.footer-container {
+    display: flex; /* Flexbox 布局 */
+    flex-direction: column; /* 纵向排列 */
+    max-width: 70%; /* 最大宽度 */
+    margin: 0 auto; /* 居中 */
+}
+
+.logo-section {
+    margin-bottom: 0px; /* 下边距 */
+    margin-left: 0;
+}
+
+.footer-logo {
+    height: 60px; /* Logo 高度 */
+    transform: scale(1.5);
+}
+
+.links-section {
+    display: flex; /* Flexbox 布局 */
+    justify-content: space-between; /* 水平分配空间 */
+    
+}
+
+/* 4个图标 */
+.social-section {
+    display: flex; /* 水平排列 */
+    align-items:start;
+    margin-top: 18px;
+}
+
+.social-icon {
+    margin-right: 20px; /* 图标间距 */
+    color: #fff; /* 图标颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.end-icon-image {
+    width: 30px;
+}
+
+.phone-icon {
+    position: relative; /* 位置相对 */
+}
+
+.tooltip {
+    display: none; /* 默认隐藏 */
+    position: absolute; /* 绝对定位 */
+    bottom: 50px; /* 设定下边距 */
+    left: 20%; /* 左居中 */
+    transform: translateX(-50%); /* 垂直居中 */
+
+    background-color: #444;
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    white-space: nowrap; /* 不换行 */
+}
+
+.phone-icon:hover .tooltip {
+    display: block; /* 悬停时显示 */
+}
+
+.link-column {
+    flex: 1; /* 每列均分空间 */
+    margin: 0 10px; /* 列间距 */
+}
+
+.link-column h4 {
+    margin-bottom: 10px; /* 标题下边距 */
+}
+
+.link-column ul {
+    list-style-type: none; /* 去掉列表样式 */
+    padding: 0; /* 去掉内边距 */
+}
+
+.link-column li {
+    margin-bottom: 10px; /* 列表项下边距 */
+}
+
+.link-column a {
+    color: #fff; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s; /* 渐变效果 */
+}
+
+.link-column a:hover {
+    color: #d8ff18; /* 悬停时的颜色 */
+}
+
+.footer-bottom {
+    display: flex; /* Flexbox 布局 */
+    justify-content: space-between; /* 水平分配空间 */
+    padding: 15px 0; /* 内边距 */
+
+}
+
+.footer-links {
+    display: flex; /* Flexbox 布局 */
+}
+
+.footer-links a {
+    margin-left: 20px; /* 左边距 */
+    color: #fff; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s; /* 渐变效果 */
+}
+
+.footer-links a:hover {
+    color: #d8ff18; /* 悬停时的颜色 */
+}
+

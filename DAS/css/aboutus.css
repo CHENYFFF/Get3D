@@ -1,0 +1,429 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #1a1a1a; */
+    background-image: url('/resources/aboutus/bg.jpg'); /* 替换为背景图像路径 */
+    background-size: cover; /* 使背景图像覆盖整个页面 */
+    background-position:top; /* 背景图像居中显示 */
+    background-repeat:repeat-y; /* 如何重复背景图像 */
+    color: #fff; /* 默认文本颜色为白色 */
+    line-height: 1.5;
+    overflow-x: hidden; /* 禁用横向滚动条 */
+}
+
+/* --------------------------- 页面 1 -------------------------- */
+/* 标题样式 */
+.gradient-text {
+    font-size: 80px; /* 标题字体大小 */
+    background: linear-gradient(to left, #d8ff18 45%, white 55%); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    text-align: center; /* 居中 */
+    margin-top: 100px; /* 上边距 */
+    margin-bottom: 100px; /* 下边距 */
+    line-height: 1; /* 行高 */
+}
+
+/* 内容区域 */
+.content-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 左右内容分开 */
+    align-items: center; /* 垂直居中 */
+    width: 70%; /* 容器宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0 20px; /* 内边距 */
+}
+
+/* 左边内容 */
+.left-content {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items:flex-start; /* 左对齐 */
+    gap: 20px; /* 元素间距 */
+}
+
+/* Logo 样式 */
+.logo-p2 {
+    margin-left: -120px;
+    width: 600px; /* Logo 宽度 */
+    height: auto; /* 保持比例 */
+}
+
+/* 描述文字样式 */
+.description {
+    font-size: 24px; /* 字体大小 */
+    color: white; /* 白色文字 */
+    margin: 0; /* 去掉默认边距 */
+    margin-bottom: 100px;
+}
+
+/* 按钮样式 */
+.action-button-p8 {
+    padding: 10px 100px; /* 内边距 */
+    font-size: 36px; /* 字体大小 */
+    cursor: pointer;
+    border-radius: 60px; /* 圆角 */
+    border: 1px solid #d8ff18; /* 边框颜色 */
+    background-color: #d8ff18; /* 背景颜色 */
+    color: rgb(0, 0, 0); /* 字体颜色 */
+    font-weight: bold; /* 加粗 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s; /* 渐变效果 */
+}
+
+.action-button-p8:hover {
+    border: 1px solid #ffffff; /* 悬停时的边框颜色 */
+    background-color: rgb(148, 148, 148); /* 悬停时的背景色 */
+}
+
+/* 右边图片 */
+.right-content {
+    width: 50%; /* 图片容器宽度 */
+    text-align: right; /* 图片右对齐 */
+}
+
+.right-image {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 保持比例 */
+    border-radius: 10px; /* 圆角 */
+}
+
+/* --------------------------- 页面 2 -------------------------- */
+/* 父容器样式 */
+.centered-container {
+    width: 70%; /* 容器宽度 */
+    margin: 200px auto; /* 水平居中 */
+    padding: 20px; /* 内边距 */
+    text-align: left; /* 文字左对齐 */
+}
+
+/* 文字段落样式 */
+.text-section {
+    font-size: 24px; /* 字体大小 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    margin-bottom: 20px; /* 段落间距 */
+}
+
+/* 图片样式 */
+.content-image {
+    width: 100%; /* 图片宽度 */
+    height: auto; /* 保持比例 */
+    margin-bottom: 20px; /* 图片与下方文字的间距 */
+    border-radius: 10px; /* 圆角 */
+}
+
+/* --------------------------- 页面 3 -------------------------- */
+/* 父容器样式 */
+.features-p3 {
+    display: flex;
+    flex-direction: column; /* 上下排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    height: 200px; /* 固定高度 */
+    margin: 60px 20px; /* 外边距 */
+}
+
+/* 渐变标题样式 */
+.gradient-title-p3 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to right, #d8ff18, #e5ff60, white, white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 0px; /* 上边距 */
+    margin-bottom: 20px; /* 下边距 */
+}
+
+/* 文字样式 */
+.answer-p3 {
+    background-size: cover;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px; /* 字体大小 */
+    color: #fff; /* 白色文字 */
+    margin-top: 30px; /* 上边距 */
+    margin-bottom: 0; /* 下边距 */
+}
+
+/* 父容器样式 */
+.parent-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 左右内容分开 */
+    align-items: center; /* 垂直居中 */
+    width: 70%; /* 整个容器的宽度 */
+    margin: 80px auto; /* 居中 */
+    margin-bottom: 220px;
+    padding: 20px; /* 内边距 */
+}
+
+/* 左边内容 */
+.left-content {
+    width: 50%; /* 左边宽度 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: flex-end; /* 子容器靠右对齐 */
+    
+}
+
+.left-content-1 {
+    width: 50%; /* 左边宽度 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: flex-end; /* 子容器靠左对齐 */
+    
+}
+
+/* 子容器 */
+.child-container {
+    width: 70%; /* 子容器宽度 */
+    text-align: left; /* 文字左对齐 */
+}
+
+/* 文字内容 */
+.text-content {
+    background-size: cover;
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px; /* 字体大小 */
+    color: #fff; /* 白色文字 */
+
+}
+
+/* 右边图片 */
+.right-content {
+    width: 50%; /* 右边宽度 */
+    text-align: right; /* 图片右对齐 */
+}
+
+.right-content-1 {
+    width: 50%; /* 右边宽度 */
+    text-align: right; /* 图片右对齐 */
+}
+
+.right-image {
+    width: 100%; /* 图片最大宽度 */
+    height: auto; /* 保持比例 */
+    border-radius: 10px; /* 圆角 */
+}
+
+
+
+/* --------------------------- 页面 4 -------------------------- */
+.features-p4 {
+    display: flex;
+    flex-direction: column; /* 上下排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    height: 100px; /* 固定高度 */
+    margin: 60px 20px; /* 外边距 */
+}
+
+/* 渐变标题样式 */
+.gradient-title-p4 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to left, #d8ff18, #e5ff60, white, white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 0px; /* 上边距 */
+    margin-bottom: 20px; /* 下边距 */
+}
+
+/* 图片容器样式 */
+.image-container {
+    position: relative; /* 相对定位 */
+    width: 100%; /* 宽度与界面相同 */
+    height: auto; /* 高度自适应 */
+}
+
+/* 背景图片样式 */
+.background-image {
+    width: 100%; /* 宽度与界面相同 */
+    height: auto; /* 高度自适应 */
+    display: block; /* 防止图片下方出现空白 */
+}
+
+/* Blur 卡片样式 */
+.blur-card {
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    right: 50px; /* 距离右侧 30px */
+    transform: translateY(-50%); /* 垂直居中 */
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    backdrop-filter: blur(10px); /* Blur 效果 */
+    padding: 30px; /* 内边距 */
+    border-radius: 10px; /* 圆角 */
+    padding: 20px;
+    height: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影 */
+}
+
+/* 标题样式 */
+.title-1 {
+    font-size: 60px; /* 字体大小 */
+    font-weight: normal; /* 正常粗细 */
+    color: rgb(0, 0, 0); /* 文字颜色 */
+    margin: 20px ; /* w外边距 */
+    margin-bottom: 10px; /* 下边距 */
+}
+.title-2 {
+    font-size:60px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: rgb(0, 0, 0); /* 文字颜色 */
+    margin: 0 ; /* w外边距 */
+    margin-bottom: 5%;
+}
+
+/* 子容器样式 */
+.sub-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    gap: 15px; /* 子容器间距 */
+}
+
+/* 图标和文字容器样式 */
+.icon-text-wrapper {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    gap: 20px; /* 图标和文字间距 */
+    margin: 1% 0;
+}
+
+/* 图标样式 */
+.icon {
+    width: 60px; /* 图标宽度 */
+    height:60px; /* 图标高度 */
+}
+
+/* 文字样式 */
+.text {
+    font-size: 24px; /* 字体大小 */
+    color: #000; /* 文字颜色 */
+    margin: 0; /* 去除默认边距 */
+}
+
+
+
+/* --------------------------- 页面 5 -------------------------- */
+.features-p5 {
+    display: flex;
+    flex-direction: column; /* 上下排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    height: 100px; /* 固定高度 */
+    margin: 220px 20px; /* 外边距 */
+    margin-bottom: 20px;
+}
+
+/* 渐变标题样式 */
+.gradient-title-p5 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to right, #d8ff18, #e5ff60, white, white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 0px; /* 上边距 */
+    margin-bottom: 20px; /* 下边距 */
+}
+/* 主容器样式 */
+.container-p5 {
+    width: 70%; /* 占界面宽度的 80% */
+    /*max-width: 1200px; /* 最大宽度 */
+    margin: 0 auto; /* 居中 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 左右卡片分开 */
+    gap: 10%; /* 卡片间距 */
+    padding: 20px; /* 内边距 */
+}
+
+/* 左侧卡片样式 */
+.card-left {
+    width: 48%; /* 卡片宽度 */
+    padding: 20px; /* 内边距 */
+    background:rgba(255, 255, 255, 0.05); /* 背景颜色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 10px rgb(0, 0, 0); /* 阴影 */
+}
+
+/* 右侧卡片样式 */
+.card-right {
+    width: 48%; /* 卡片宽度 */
+    padding: 20px; /* 内边距 */
+    background:rgba(255, 255, 255, 0.05); /* 背景颜色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 10px rgb(0, 0, 0); /* 阴影 */
+}
+
+.heading{
+    margin:  0; 
+    margin-bottom: 50px;
+}
+
+/* 主标题样式 */
+.heading-primary {
+    font-size: 36px; /* 字体大小 */
+    font-weight:normal ; /* 加粗 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    margin:  0 ;
+}
+
+/* 副标题样式 */
+.heading-secondary {
+    font-size: 36px; /* 字体大小 */
+    font-weight: bold; /* 正常粗细 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    margin:  0 ;
+}
+
+/* 左侧卡片文本样式 */
+.paragraph-left {
+    font-size: 24px; /* 字体大小 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+}
+
+/* 右侧卡片文本样式 */
+.paragraph-right {
+    font-size: 24px; /* 字体大小 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+}
+
+/* 水平排列的子容器样式 */
+.wrapper-horizontal {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 水平排列 */
+    gap: 10px; /* 子容器间距 */
+    margin-top: 20px; /* 上边距 */
+    margin-bottom: 20px;
+}
+
+/* 图标和文字容器样式 */
+.item-icon-text {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    gap: 10px; /* 图标和文字间距 */
+}
+
+/* 小图标样式 */
+.icon-small {
+    width: 24px; /* 图标宽度 */
+    height: 24px; /* 图标高度 */
+}
+
+/* 图标旁的文字样式 */
+.text-icon {
+    font-size: 24px; /* 字体大小 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    margin: 0; /* 去除默认边距 */
+}
+
+
+/* 子容器文字样式 */
+.sub-text {
+    font-size: 24px; /* 字体大小 */
+    color: #000; /* 文字颜色 */
+    margin: 0; /* 去除默认边距 */
+}

@@ -1,0 +1,96 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #1a1a1a; */
+    background-image: url('/resources/mofang/bg.jpg'); /* 替换为背景图像路径 */
+    background-size: cover; /* 使背景图像覆盖整个页面 */
+    background-position:top; /* 背景图像居中显示 */
+    background-repeat:repeat-y; /* 如何重复背景图像 */
+    color: #fff; /* 默认文本颜色为白色 */
+    line-height: 1.5;
+    overflow-x: hidden; /* 禁用横向滚动条 */
+}
+
+
+/* --------------------------------- 页面 1 --------------------------------- */
+.gradiant-title-reverse{
+    background-size: cover;
+    text-align: center;
+    font-size: 2.5rem; /* 60px 大标题的字体大小 */
+    background: linear-gradient(to left, #d8ff18,#e5ff60,white,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2rem; /* 大标题的字体大小 */
+    color: #fff;
+}
+
+.main-container-p1 {
+    position: relative;
+    padding: 0 0 20px 20px;
+    border-radius: 10px;
+    width: 95%; /* 设置宽度为 92% */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+.box-container-p1 {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 子元素均匀分布 */
+    margin-top: 20px; /* 顶部间距 */
+}
+
+.box-p1 {
+    display: flex; /* 启用 Flexbox */
+    flex-direction: column; /* 垂直方向布局 */
+    justify-content: space-between; /* 子元素之间的间隔 */
+    width: 30%; /* 子容器宽度 */
+    padding: 10px; /* 内边距 */
+    text-align: center; /* 文本居中 */
+    min-height: 300px; /* 设置最小高度以确保一致性 */
+}
+
+.box-p1 img {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 自适应高度 */
+    border-radius: 10px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.version-text {
+    text-align: left;
+    font-size: 1.2rem; /* 版本文本的字体大小 */
+    color: #ffffff; /* 版本文本颜色 */
+    margin: 15px 0px; /* 外边距 */
+}
+
+.download-button {
+    margin: 0 auto;
+    width: 180px;
+    background-color: #d8ff18; /* 按钮背景色 */
+    color: black; /* 按钮文字颜色 */
+    border: none; /* 去掉边框 */
+    padding: 10px 10px; /* 内边距 */
+    border-radius: 20px; /* 圆角 */
+    font-size: 1rem; /* 字体大小 */
+    font-weight: bold;
+    cursor: pointer; /* 鼠标悬停时显示为手形光标 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.download-button:hover {
+    border: 1px solid #ffffff; /* 添加边框颜色 */
+    background-color: rgb(148, 148, 148); /* 悬停时的背景色 */;
+}
+/* --------------------------------- 页面 2 -------------------------------- */
+
+
+/* --------------------------------- 页面 3 -------------------------------- */
+
+
+/* --------------------------------- 页  脚 -------------------------------- */
+

@@ -1,0 +1,450 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #1a1a1a; */
+    background-image: url('/resources/5eye/bg.jpg'); /* 替换为背景图像路径 */
+    background-size: cover; /* 使背景图像覆盖整个页面 */
+    background-position:top; /* 背景图像居中显示 */
+    background-repeat:repeat; /* 不重复背景图像 */
+    color: #fff; /* 默认文本颜色为白色 */
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+
+/*------------------------ 页面 1 ------------------------ */
+/* 1.1部分 */
+.hero {
+    text-align: center; /* 仍然保持中心对齐 */
+    position: relative;
+    height: 60vh; /* 高度占据视窗的55% */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    display: flex; /* 使用 flexbox */
+    align-items: center; /* 垂直居中内容 */
+    justify-content: center; /* 水平居中内容 */
+    overflow-x: hidden; /* 禁用横向滚动条 */
+}
+
+.hero-image {
+    width: 95%; /* 宽度占页面的95% */
+    height: 100%;
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直中心 */
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 将图像中心对准页面中心 */
+    object-fit: cover; /* 保持宽高比，填充整个区域 */
+    border-radius: 20px; /* 圆角矩形 */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 110%; /* 宽度100% */
+    min-height: 100%; /* 确保图片至少占满容器 */
+    position: relative; /* 设置相对定位 */
+    top: 0%; /* 向上移动以显示上部 */
+    left: 50%;
+    transform: translate(-50%, -15%); /* 水平居中 */
+}
+
+.hero-content {
+    position: absolute; /* 改为绝对定位 */
+    left: 5%; /* 靠左对齐 */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%); /* 确保内容在垂直方向上居中 */
+    z-index: 10; /* 确保文本在最上层 */
+    text-align: left; /* 文本对齐 */
+    padding: 20px; /* 添加内边距以增加文本可读性 */
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px; /* 标题和描述之间的间距 */
+}
+
+.hero-content .hero-description {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8); /* 描述文字颜色 */
+}
+
+/* 渐变遮罩 */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* 遮罩高度 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* 从下往上的渐变 */
+    z-index: 1; /* 确保遮罩在图片上方 */
+}
+/*------------------------ 页面 2 ------------------------ */
+.gradient-title-p2 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to right, #d8ff18,#dcff2c,white 50%,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.container-p2 {
+    display: flex; /* 使用flex布局 */
+    align-items: flex-start; /* 垂直对齐顶部 */
+    /* background-color: #000; 背景色 */
+    padding: 20px; /* 内边距 */
+}
+
+
+.image-container-p2 {
+    align-items: flex-start; /* 垂直对齐顶部 */
+    flex: 1; /* 左侧图片区域占据可用空间 */
+}
+
+.camera-image-p2 {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 保持比例 */
+}
+
+.image-container-p2 img{
+    width: 40%; /* 宽度100% */
+    position: relative; /* 设置相对定位 */
+    top: 0%; /* 向上移动以显示上部 */
+    left: 50%;
+    transform: translate(-50%,-8%); /* 水平居中 */
+}
+
+.content-container-p2 {
+    flex: 1; /* 右侧内容区域占据可用空间 */
+    padding-left: 20px; /* 左侧内边距 */
+    color: #fff; /* 字体颜色 */
+}
+
+.text-p2 {
+    /* font-weight: bold; */
+    font-size: 36px; /* 字体大小 */
+    margin-bottom: 20px; /* 下方间距 */
+}
+
+.icon-container-p2 {
+    margin-top: 100px;
+    display: flex; /* 使用flex布局 */
+    gap:10vw;
+}
+
+.icon-item-p2 {
+    text-align: center; /* 图标和文字居中 */
+    color:#d8ff18;
+    font-size: 24px;
+}
+
+.icon-p2 {
+    width: 100px; /* 图标宽度 */
+    height: auto; /* 保持比例 */
+    margin-bottom: 10px; /* 图标和文字间距 */
+}
+
+/*------------------------ 页面 3 ------------------------ */
+.container-p3 {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直对齐顶部 */
+    /* background-color: #000; 背景色 */
+    padding: 20px; /* 内边距 */
+    overflow: hidden;
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 120px;
+}
+
+
+.image-container-p3 {
+    align-items: flex-start; /* 垂直对齐顶部 */
+    flex: 1; /* 左侧图片区域占据可用空间 */
+}
+
+.camera-image-p3 {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 保持比例 */
+}
+
+.image-container-p3 img{
+    width: 80%; /* 宽度100% */
+    position: relative; /* 设置相对定位 */
+    right:-10% ;
+    transform: scale(1.4);
+}
+
+.content-container-p3 {
+    flex: 1; /* 内容区域占据可用空间 */
+    padding-left: 20px; /* 左侧内边距 */
+    color: #fff; /* 字体颜色 */
+}
+
+.text-p3 {
+    line-height: 2;
+    /* font-weight: bold; */
+    font-size: 24px; /* 字体大小 */
+
+}
+
+.title-p3 {
+    /* font-weight: bold; */
+    font-size: 36px; /* 字体大小 */
+    margin-bottom: 40px; /* 下方间距 */
+    color:#d8ff18;
+}
+
+/*------------------------ 页面 4 ------------------------ */
+.container-p4 {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直对齐顶部 */
+    padding: 20px; /* 内边距 */
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.image-container-p4 {
+    align-items: center; /* 垂直对齐顶部 */
+    flex: 1; /* 左侧图片区域占据可用空间 */
+}
+
+.camera-image-p4 {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 保持比例 */
+}
+
+.image-container-p4 img {
+    width: 100%; /* 宽度100% */
+    position: relative; /* 设置相对定位 */
+    transform: scale(1.5);
+    left: 10%;
+}
+
+.content-container-p4 {
+    flex: 1; /* 右侧内容区域占据可用空间 */
+    padding-left: 15%; /* 左侧内边距 */
+    color: #fff; /* 字体颜色 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 垂直排列 */
+}
+
+.title-p4 {
+    font-size: 36px; /* 字体大小 */
+    margin-bottom: 40px; /* 下方间距 */
+}
+
+.text-p4 {
+    font-size: 24px; /* 字体大小 */
+    margin-top: 0; /* 上方间距 */
+    margin-bottom: 20px; /* 下方间距 */
+}
+
+
+
+/*------------------------ 页面 5 ------------------------ */
+.gradient-title-p5 {
+    background-size: cover;
+    text-align: center;
+    font-size: 48px; /* 大标题的字体大小 */
+    background: linear-gradient(to right, #d8ff18,#d4ff00 43%,white 50%,white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+
+.container-p5 {
+    display: flex; /* 使用flex布局 */
+    align-items:flex-end;
+    padding: 20px; /* 内边距 */
+    width: 80%; /* 容器宽度 */
+    margin: 0 auto; /* 居中 */
+}
+
+.content-container-p5 {
+    flex: 1; /* 左侧内容区域占据可用空间 */
+    color: #fff; /* 字体颜色 */
+    margin-bottom: 100px;
+}
+
+.list-p5 {
+    list-style-type: none; /* 去掉默认项目符号 */
+    padding: 0; /* 去掉内边距 */
+    margin-bottom: 110px;
+}
+
+.list-p5 li {
+    
+    display: flex; /* 使用flex布局 */
+    align-items: flex-start; /* 垂直对齐 */
+    margin-bottom: 10px; /* 下方间距 */
+    font-size: 24px; /* 字体大小 */
+}
+
+.check-icon-first {
+    width: 30px; /* 图标宽度 */
+    height: auto; /* 保持比例 */
+    margin-top: -30px;
+    margin-right: 10px; /* 右侧间距 */
+}
+
+.check-icon {
+    width: 30px; /* 图标宽度 */
+    height: auto; /* 保持比例 */
+    margin-right: 10px; /* 右侧间距 */
+}
+
+.image-container-p5 {
+    flex: 1; /* 右侧图片区域占据可用空间 */
+}
+
+.camera-image-p5 {
+    width: 100%; /* 图片宽度占满容器 */
+    height: auto; /* 保持比例 */
+}
+
+/*------------------------ 页面 6 ------------------------ */
+.container-p6 {
+    display: flex; /* 使用flex布局 */
+    align-items: flex-start; /* 垂直对齐顶部 */
+    padding: 20px; /* 内边距 */
+    width: 100%; /* 设置容器宽度 */
+    margin: 0 auto; /* 居中 */
+    margin-top: 160px;
+    height: 700px;
+    overflow: hidden; /* 避免内容溢出 */
+}
+
+.image-container-p6 {
+    flex: 0 0 45%; /* 左侧图片区域占据40%宽度 */
+    position: relative; /* 相对定位 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    overflow: hidden; /* 避免图片溢出 */
+}
+
+.camera-lens-image {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 100%; /* 图片最大高度为容器高度 */
+    object-fit: contain; /* 保持图片比例，避免拉伸 */
+}
+
+.content-container-p6 {
+    flex: 0 0 50%; /* 右侧内容区域占据60%宽度 */
+    color: #fff; /* 字体颜色 */
+    padding-left:30px; /* 左侧内边距 */
+    box-sizing: border-box; /* 确保内边距不影响宽度 */
+}
+
+.gradient-title-p6 {
+    line-height: 1;
+    margin-top: 0;
+    background-size: cover;
+    text-align: left;
+    font-size: 48px; /* 大标题的字体大小 */
+    font-weight: bold;
+    background: linear-gradient(145deg, #d8ff18, #e5ff60 10%, white 30%, white); /* 绿色到白色渐变 */
+    background-clip: text; /* 让背景渐变用于文本 */
+    -webkit-text-fill-color: transparent; /* 使文本自带的背景颜色透明，仅显示窗口背景 */
+}
+
+.list-p5 {
+    list-style: none; /* 去掉列表默认样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.list-p5 li {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    margin-bottom: 10px; /* 列表项之间的间距 */
+}
+
+.check-icon {
+    margin-right: 10px; /* 图标与文本之间的间距 */
+}
+
+
+
+/*------------------------ 页面 7 表格------------------------ */
+.data-table-p7 {
+    border-spacing: 0; /* 设置单元格间距为 0 */
+    padding: 0px 30px 20px 30px; /* 上右下左 */
+    width: 70%; /* 设置表格宽度 */
+    margin: 20px auto; /* 居中 */
+    border-radius: 10px; /* 圆角效果 */
+    overflow: hidden; /* 避免圆角效果出现问题 */
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.15) , #131315, rgba(255, 255, 255, 0.1)); /* 渐变背景 */
+    margin-top: 30px;
+    position: relative; /* 为伪元素定位做准备 */
+}
+
+/* 表头伪元素 */
+.data-table-p7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* 表头高度，根据实际情况调整 */
+    background-color: #d8ff18; /* 黄绿色 */
+    z-index: 1; /* 确保在表头内容下方 */
+    border-radius: 10px 10px 0 0; /* 圆角效果 */
+}
+
+/* th是表头 td是表身 */
+.data-table-p7 th,
+.data-table-p7 td {
+    padding: 10px 40px; /* 单元格内边距 */
+    text-align: center; /* 文本居中 */
+    position: relative; /* 为表头内容定位做准备 */
+    z-index: 2; /* 确保表头内容在伪元素上方 */
+}
+
+/* 为表头和表身设置下边框 */
+.data-table-p7 th {
+    color: #000;
+    font-weight: normal; /* 表头加粗 */
+    font-size: 20px; /* 表头字体大小 */
+    line-height: 1.5; /* 行高较大 */
+    border-right: 2px solid rgba(255, 255, 255, 0.5); /* 单元格右边框 */
+}
+
+.data-table-p7 td {
+    font-size: 20px; /* 单元格字体大小 */
+    line-height: 1.5; /* 行高 */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* 单元格下边框 */
+    border-right: 2px solid rgba(255, 255, 255, 0.5); /* 单元格右边框 */
+}
+
+
+/* 去掉整个表格最后一行的底部边框 */
+.data-table-p7 tr:last-child td {
+    border-bottom: none;
+}
+
+/* 去掉 Overall Parameters 单元格的底部边框 */
+.data-table-p7 td[rowspan]:last-child {
+    border-bottom: none;
+}
+
+
+/* 去掉整个表格最右边一列的右侧边框 */
+.data-table-p7 td:last-child {
+    border-right: none;
+}
+
+/* 去掉整个表格最右边一列的右侧边框 */
+.data-table-p7 th:last-child {
+    border-right: none;
+}

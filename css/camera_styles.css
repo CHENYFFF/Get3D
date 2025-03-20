@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #1a1a1a; */
-    background-image: url('/resources/5eye/bg.jpg'); /* 替换为背景图像路径 */
+    background-image: url('../resources/5eye/bg.jpg'); /* 替换为背景图像路径 */
     background-size: cover; /* 使背景图像覆盖整个页面 */
     background-position:top; /* 背景图像居中显示 */
     background-repeat:repeat; /* 不重复背景图像 */

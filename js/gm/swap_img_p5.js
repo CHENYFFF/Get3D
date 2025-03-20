@@ -25,7 +25,7 @@ const descriptions_p5 = {
 };
 
 // 设置初始显示的内容
-displayImage_p5.src = `/resources/gm/temp1.jpg`;
+displayImage_p5.src = `../../resources/gm/temp1.jpg`;
 imageDescription_p5.querySelector('p').innerHTML = descriptions_p5.temp1.text1; // 使用 innerHTML
 
 
@@ -39,7 +39,7 @@ buttons_p5.forEach(button => {
 
         const imageKey_p5 = this.getAttribute('data-image-p5');
         // 切换图片
-        displayImage_p5.src = `/resources/gm/${imageKey_p5}.jpg`;
+        displayImage_p5.src = `../../resources/gm/${imageKey_p5}.jpg`;
         // 更新描述
         imageDescription_p5.querySelector('p').innerHTML = descriptions_p5[imageKey_p5].text1; // 使用 innerHTML
     });

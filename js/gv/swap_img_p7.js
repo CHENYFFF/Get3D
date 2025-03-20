@@ -18,7 +18,7 @@ const descriptions = {
 };
 
 // 设置初始显示的内容
-displayImage_p7.src = `/resources/GV/temp1.jpg`;
+displayImage_p7.src = `../../resources/GV/temp1.jpg`;
 imageDescription.querySelector('h2').textContent = descriptions.temp1.title;
 imageDescription.querySelector('p').innerHTML = descriptions.temp1.text1; // 使用 innerHTML
 
@@ -33,7 +33,7 @@ buttons_p7.forEach(button => {
 
         const imageKey = this.getAttribute('data-image');
         // 切换图片
-        displayImage_p7.src = `/resources/GV/${imageKey}.jpg`;
+        displayImage_p7.src = `../../resources/GV/${imageKey}.jpg`;
         // 更新描述
         imageDescription.querySelector('h2').textContent = descriptions[imageKey].title;
         imageDescription.querySelector('p').innerHTML = descriptions[imageKey].text1; // 使用 innerHTML

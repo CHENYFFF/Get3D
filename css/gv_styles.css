@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #1a1a1a; */
-    background-image: url('/resources/gv/bg.jpg'); /* 替换为背景图像路径 */
+    background-image: url('../resources/gv/bg.jpg'); /* 替换为背景图像路径 */
     background-size: cover; /* 使背景图像覆盖整个页面 */
     background-position:top; /* 背景图像居中显示 */
     background-repeat:repeat; /* 不重复背景图像 */
@@ -72,7 +72,7 @@ body {
     left: -58px; /* 距离左侧 20px */
     width:260px; /* 图标宽度 */
     height: 300px; /* 图标高度 */
-    background-image: url('/resources/gv/free.svg'); /* 替换为你的 SVG 文件路径 */
+    background-image: url('../resources/gv/free.svg'); /* 替换为你的 SVG 文件路径 */
     background-size: cover; /* 保持图标比例 */
     background-repeat: no-repeat; /* 禁止重复 */
     z-index: 2; /* 确保图标在视频的顶层 */
@@ -555,7 +555,7 @@ video {
     right: -10px; /* 距离右侧 10px */
     width: 100px; /* SVG 图标宽度 */
     height:100px; /* SVG 图标高度 */
-    background-image: url('/resources/gv/VIP.svg'); 
+    background-image: url('../resources/gv/VIP.svg'); 
     background-size: cover; /* 保持图标比例 */
     background-repeat: no-repeat; /* 禁止重复 */
     z-index: 1; /* 确保图标在图片的顶层 */

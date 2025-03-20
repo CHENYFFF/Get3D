@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #1a1a1a; */
-    background-image: url('/resources/home/bg.jpg'); /* 替换为背景图像路径 */
+    background-image: url('../resources/home/bg.jpg'); /* 替换为背景图像路径 */
     background-size: cover; /* 使背景图像覆盖整个页面 */
     /* background-position:top ; /* 背景图像顶头显示 */
     background-position: 0 -200px; /* 水平方向偏移 0，垂直方向偏移 200px */
@@ -161,7 +161,7 @@ body {
 
 .item-list-p2 li::before {
     content: '';
-    background: url('/resources/home/1.svg') no-repeat center; /* 替换为第一个SVG路径 */
+    background: url('../resources/home/1.svg') no-repeat center; /* 替换为第一个SVG路径 */
     background-size: contain;; /* 图标大小 */
     width: 32px;
     height: 32px;
@@ -169,11 +169,11 @@ body {
 }
 
 .item-list-p2 li:nth-child(2)::before {
-    background: url('/resources/home/2.svg') no-repeat center; /* 替换为第二个SVG路径 */
+    background: url('../resources/home/2.svg') no-repeat center; /* 替换为第二个SVG路径 */
 }
 
 .item-list-p2 li:nth-child(3)::before {
-    background: url('/resources/home/3.svg') no-repeat center; /* 替换为第三个SVG路径 */
+    background: url('../resources/home/3.svg') no-repeat center; /* 替换为第三个SVG路径 */
 }
 
 

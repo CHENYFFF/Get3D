@@ -1,4 +1,4 @@
-// 页面2 —— 2.2
+// 页面2 —— 2.2button的位置
 const slider = document.getElementById("slider");
 let sliderPos;
 
@@ -33,12 +33,12 @@ buttons.forEach(button => {
         // 切换图像组
         const imageGroup = this.getAttribute('data-image-group');
         if (imageGroup === '1') {
-            document.querySelector(".background-img").style.backgroundImage = "url('/resources/mofang/2.1_before_1.jpg')";
-            document.querySelector(".foreground-img").style.backgroundImage = "url('/resources/mofang/2.1_after_1.jpg')";
+            document.querySelector(".background-img").style.backgroundImage = "url('../../resources/mofang/2.1_before_1.jpg')";
+            document.querySelector(".foreground-img").style.backgroundImage = "url('../../resources/mofang/2.1_after_1.jpg')";
             currentImageGroup = 1;
         } else if (imageGroup === '2') {
-            document.querySelector(".background-img").style.backgroundImage = "url('/resources/mofang/2.1_before_2.jpg')"; // 新的before
-            document.querySelector(".foreground-img").style.backgroundImage = "url('/resources/mofang/2.1_after_2.jpg')"; // 新的after
+            document.querySelector(".background-img").style.backgroundImage = "url('../../resources/mofang/2.1_before_2.jpg')"; // 新的before
+            document.querySelector(".foreground-img").style.backgroundImage = "url('../../resources/mofang/2.1_after_2.jpg')"; // 新的after
             currentImageGroup = 2;
         }
     });
@@ -81,16 +81,16 @@ buttons_1.forEach(button_1 => {
         // 切换图像组
         const imageGroup_1 = this.getAttribute('data-image-group'); 
         if (imageGroup_1 === '1') {
-            document.querySelector(".background-img-1").style.backgroundImage = "url('/resources/mofang/2.1_before_1.jpg')";
-            document.querySelector(".foreground-img-1").style.backgroundImage = "url('/resources/mofang/2.1_after_1.jpg')";
+            document.querySelector(".background-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_before_1.jpg')";
+            document.querySelector(".foreground-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_after_1.jpg')";
             currentImageGroup_1 = 1;
         } else if (imageGroup_1 === '2') {
-            document.querySelector(".background-img-1").style.backgroundImage = "url('/resources/mofang/2.1_before_2.jpg')"; // 新的before
-            document.querySelector(".foreground-img-1").style.backgroundImage = "url('/resources/mofang/2.1_after_2.jpg')"; // 新的after
+            document.querySelector(".background-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_before_2.jpg')"; // 新的before
+            document.querySelector(".foreground-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_after_2.jpg')"; // 新的after
             currentImageGroup_1 = 2;
         } else if (imageGroup_1 === '3') {
-            document.querySelector(".background-img-1").style.backgroundImage = "url('/resources/mofang/2.1_before_3.jpg')"; // 新的before
-            document.querySelector(".foreground-img-1").style.backgroundImage = "url('/resources/mofang/2.1_after_3.jpg')"; // 新的after
+            document.querySelector(".background-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_before_3.jpg')"; // 新的before
+            document.querySelector(".foreground-img-1").style.backgroundImage = "url('../../resources/mofang/2.1_after_3.jpg')"; // 新的after
             currentImageGroup_1 = 3;
         }
     });

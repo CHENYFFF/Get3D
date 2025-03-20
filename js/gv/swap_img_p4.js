@@ -28,7 +28,7 @@ groupSwitchButtons.forEach(button => {
 
         // 更新图片显示为当前组的第一个图片
         const firstImage = imageGroups[currentGroup][0];
-        displayImage_p4.src = `/resources/gv/${firstImage}.jpg`;
+        displayImage_p4.src = `../../resources/gv/${firstImage}.jpg`;
 
         // 更新按钮的 data-image 属性
         buttons_p4.forEach((btn, index) => {
@@ -51,6 +51,6 @@ buttons_p4.forEach(button => {
 
         const imageKey = this.getAttribute('data-image');
         // 切换图片
-        displayImage_p4.src = `/resources/gv/${imageKey}.jpg`;
+        displayImage_p4.src = `../../resources/gv/${imageKey}.jpg`;
     });
 });

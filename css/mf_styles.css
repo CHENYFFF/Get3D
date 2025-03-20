@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #1a1a1a; */
-    background-image: url('/resources/mofang/bg.jpg'); /* 替换为背景图像路径 */
+    background-image: url('../resources/mofang/bg.jpg'); /* 替换为背景图像路径 */
     background-size: cover; /* 使背景图像覆盖整个页面 */
     background-position:top; /* 背景图像居中显示 */
     background-repeat:repeat-y; /* 如何重复背景图像 */
@@ -193,13 +193,13 @@ body {
 
 .background-img {
     /* background-size: cover; */
-    background-image: url("/resources/mofang/2.1_before_1.jpg");
+    background-image: url("../resources/mofang/2.1_before_1.jpg");
   }
 
 .foreground-img {
     border-top-right-radius: 0; /* 右上角不圆角 */
     border-bottom-right-radius: 0; /* 右下角不圆角 */
-    background-image: url("/resources/mofang/2.1_after_1.jpg");
+    background-image: url("../resources/mofang/2.1_after_1.jpg");
     width: 50%;
   }
    
@@ -240,7 +240,7 @@ body {
     width: 120px;
     height:120px;
     border-radius: 50%;
-    background-image: url("/resources/logos/mf.png");
+    background-image: url("../resources/logos/mf.png");
     background-size: cover; /* 确保背景图像覆盖整个按钮 */
     background-position: center; /* 图像居中对齐 */
     left: calc(50% - 60px);/*居中*/
@@ -317,13 +317,13 @@ body {
 /* 3.2 滑块比较 省略可复用2.1的部分*/
 .background-img-1 {
     /* background-size: cover; */
-    background-image: url("/resources/mofang/2.1_before_1.jpg");
+    background-image: url("../resources/mofang/2.1_before_1.jpg");
   }
 
 .foreground-img-1 {
     border-top-right-radius: 0; /* 右上角不圆角 */
     border-bottom-right-radius: 0; /* 右下角不圆角 */
-    background-image: url("/resources/mofang/2.1_after_1.jpg");
+    background-image: url("../resources/mofang/2.1_after_1.jpg");
     width: 50%;
   }
    
@@ -364,7 +364,7 @@ body {
     width: 120px;
     height:120px;
     border-radius: 50%;
-    background-image: url("/resources/logos/mf.png");
+    background-image: url("../resources/logos/mf.png");
     background-size: cover; /* 确保背景图像覆盖整个按钮 */
     background-position: center; /* 图像居中对齐 */
     left: calc(50% - 60px);/*居中*/

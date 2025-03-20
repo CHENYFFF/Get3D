@@ -25,7 +25,7 @@ buttons_p4.forEach((button, index) => {
 
         const imageKey = this.getAttribute('data-image');
         // 切换图片
-        displayImage_p4.src = `/resources/mofang/${imageKey}.jpg`;
+        displayImage_p4.src = `../../resources/mofang/${imageKey}.jpg`;
         // 显示对应的描述文本
         descriptionTexts[index].textContent = descriptions[imageKey];
         descriptionTexts[index].style.display = 'block';
